@@ -1,0 +1,13 @@
+.body{
+    background-color: rgba(0, 0, 255, 0.534);
+}
+
+.logo{
+    width: 50%;
+}
+.hola{
+    background-color: rgb(0, 128, 196 );
+    height: auto;
+    font-size: 30px;
+}
+

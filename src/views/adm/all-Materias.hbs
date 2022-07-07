@@ -1,0 +1,52 @@
+{{#if materia}}
+<a href="/adm/adm" class="btn btn-success">
+  Volver
+</a>
+
+<a href="/adm/addmateria" class="btn btn-success">
+  Agregar Materia
+</a>
+
+<table class="table table-bordered table-hover bg-success mt-5">
+  <div class="text-center">
+    <h1>Materias</h1>
+  </div>
+  <thead>
+    <tr>
+      <th><strong>Nombre</strong></th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    {{#each materia}}
+    <tr>
+      <td><strong>{{NombreMateria}}</strong></td>
+
+
+      <td>
+        <a href="" class="btn btn-info mb-1">
+          Editar
+        </a>
+        <form action="" method="POST">
+          <input type="hidden" name="_method" value="DELETE">
+          <button type="submit" class="btn btn-danger mb-1">Eliminar</button>
+        </form>
+
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+
+</table>
+{{else}}
+<div class="h-100 d-flex align-items-center justify-content-center">
+  <div class="text-center text-white">
+    <h1>No Hay Materias Registradas</h1>
+    <a href="/adm/addmateria" class="btn btn-success">
+      Agregar Materia
+    </a>
+  </div>
+
+</div>
+{{/if}}

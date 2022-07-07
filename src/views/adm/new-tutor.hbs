@@ -1,0 +1,52 @@
+<div class="col-md-4 mx-auto mt-5">
+    <div class="card text-center">
+        <div class="card-header">
+            <h3>Nuevo Tutor</h3>
+
+        </div>
+        <div class="card-body">
+       
+        <form action="/adm/new-tutor" method="POST">
+            <div class="form-group">
+                <input type="text" name="NombreTutor" class="form-control" placeholder="Nombre" autofocus>
+
+            </div>
+            <div class="form-group">
+                 <input type="text" name="ApellidoTutor" class="form-control" placeholder="Apellido" autofocus>
+            </div>
+
+             <div class="form-group">
+              <input type="text" name="TelefonoTutor" class="form-control" placeholder="Telefono" autofocus>
+            </div>
+
+             <div class="form-group">
+                <input type="text" name="CorreoTutor" class="form-control" placeholder="Correo" autofocus>
+            </div>
+
+             <div class="form-group">
+                <textarea name="DireccionTutor" placeholder="Direccion" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group ">
+                    <select class="form-select" aria-label="Default select example" name="estudiante">
+                        <option selected>Selecciones El Estudiante A cargo </option>
+                        {{#each estu}}
+                        <option>{{NombreEstudiante}}</option>
+                        {{/each }}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                <textarea name="password" placeholder="password" class="form-control"></textarea>
+            </div>
+
+             <div class="form-group">
+                <button class="button btn btn-primary btn-block">
+                    Guardar
+                </button>
+             </div>
+        
+        </form>
+ </div>
+    </div>
+</div>

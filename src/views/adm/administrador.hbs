@@ -1,0 +1,292 @@
+<div class="d-flex" >
+      <div id="sidebar-container" class="hola ">
+    <div class="logo text-dark fw-bold  font-italic">
+       <strong> Administrador</strong>
+    </div>
+
+    <div class="menu lead">
+        <a href="/adm/adm" class="d-block p-3 text-dark fw-bold "><i class="fa-solid fa-house" ></i> Inicio</a>
+        <a href="/centros" class="d-block p-3 text-dark fw-bold"><i class="fa-solid fa-school-circle-check"></i> Centros De Estudios</a>
+        <a href="/estudiantes" class="d-block p-3 text-dark fw-bold"><i class="fa-solid fa-school-circle-check"></i> Estudiantes</a>
+        <a href="/datosC" class="d-block p-3 text-dark fw-bold"><i class="fa-solid fa-asterisk"></i> Detalles</a>
+        <a href="/materias" class="d-block p-3 text-dark fw-bold"><i class="fa-solid fa-book"></i>Materias</a>
+        <a href="/grados" class="d-block p-3 text-dark fw-bold"><i class="fa-solid fa-arrow-down-wide-short"></i> Grados</a>
+    </div>
+</div> 
+        <div class="w-100">
+
+<!-- Contenido principal-->
+              <div id="contenido" class="pt-3 px-3">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h4 class="text-dark display-2"><Strong>Bienvenido</Strong></h4>                      
+                    </div>
+                  </div>
+                  
+                  <div class="row mt-4">
+                    <div class="col-12">
+                      <h4 class="text-grey font-italic">Información de Interes</h4>
+                    </div>
+                  </div>
+
+                  <!-- Cards -->
+                  <div class="row">
+                    <!-- Card 1-->
+                    <div class="col-md-4">
+                      <div class="card text-bg-warning">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6">
+                              <i class="fa-solid fa-school"></i>
+                              <h5 class="card-title fw-bold ">
+                                Centro de Estudios 
+                              </h5>
+                            </div>
+                            <div class="col-4">
+                              <h2 class="fw-bold text-center display-5">{{cantidadC }} </h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Card 2-->
+                    <div class="col-md-4">
+                      <div class="card text-dark bg-success">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6">
+                              <i class="fa-solid fa-chalkboard-user"></i>
+                              <h5 class="card-title fw-bold">
+                                Docentes <br> 
+                              </h5>
+                            </div>
+                            <div class="col-4">
+                              <h2 class="fw-bold text-center display-5">?</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Card 3-->
+                    <div class="col-md-4">
+                      <div class="card text-bg bg-danger">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6">
+                            <i class="fa-solid fa-user-graduate"></i>
+                              <h5 class="card-title fw-bold ">
+                                Estudiantes
+                              </h5>
+                            </div>
+                            <div class="col-4">
+                              <h2 class="fw-bold text-center display-5">{{cantidadE }}</h2>
+                            </div>
+                          </div>
+                          
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  
+                  <!-- card-->
+                  <div class="row">
+                      <!-- card de secretarios-->
+                   <div class="col-md-4 mt-2">
+                      <div class="card text-dark bg-success">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6">
+                              <i class="fa-solid fa-user-gear"></i>
+                              <h5 class="card-title fw-bold ">
+                                Secretarios
+                              </h5>
+                            </div>
+                            <div class="col-4">
+                              <h2 class="fw-bold text-center display-5">? </h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                       <!-- card de turores-->
+                     <div class="col-md-4 mt-2">
+                      <div class="card text-dark bg-success">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6">
+                             <i class="fa-solid fa-people-roof"></i>
+                              <h5 class="card-title fw-bold ">
+                                Tutores
+                              </h5>
+                            </div>
+                            <div class="col-4">
+                              <h2 class="fw-bold text-center display-5">? </h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row mt-5">
+                    <div class="col-12">
+                      <h4 class="text-grey font-italic">Opciones</h4>
+                    </div>
+                  </div>
+
+                  <!-- Botonera Accesos Rapidos -->
+                  <div class="row">
+                    <!-- Boton 1-Agrergar Nuevo Centro-->
+                    <div class="col-md-3 mb-4">
+                      <a href="/adm/add">
+                        <button onclick="mostrarModal()" class="btn btn-primary btn-lg fw-bold  text-dark">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-square-plus display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Registrar centros de estudios
+                          </div>
+                        </div>
+                          </button>
+                      </a>
+                    </div>
+
+                    <!-- Boton 2-Agregar Nuevo Docente-->
+                    <div class="col-md-3 mb-4">
+                  <a href="/adm/adddocente">
+                        <button onclick="mostrarModal()" class="btn btn-primary btn-lg fw-bold  text-dark">
+                        <div class="row">
+                          <div class="col-4">
+                           <i class="fa-solid fa-square-plus display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Registrar Docente
+                          </div>
+                        </div>
+                          </button>
+                  </a>
+                    </div>
+
+                     <!-- Boton 3-Agregar Nuevo Estidiante-->
+                    <div class="col-md-3 mb-4">
+                     <a href="/adm/addest">
+                       <button onclick="mostrarModal()" class="btn btn-primary btn-lg fw-bold  text-dark">
+                        <div class="row">
+                          <div class="col-4">
+                             <i class="fa-solid fa-square-plus display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Registrar Estudiantes
+                          </div>
+                        </div>
+                          </button>
+                     </a>
+                    </div>
+
+                     <!-- Boton 4-Agregar Nuevo Tutor-->
+                    <div class="col-md-3 mb-4">
+                     <a href="/adm/addtutor">
+                       <button onclick="mostrarModal()" class="btn btn-primary btn-lg fw-bold  text-dark">
+                        <div class="row">
+                          <div class="col-4">
+                           <i class="fa-solid fa-square-plus display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Registrar Padre o Tutor
+                          </div>
+                        </div>
+                          </button>
+                     </a>
+                    </div>
+
+                     <!-- Boton 5-Agregar Nuevo Secretario Academivo-->
+                    <div class="col-md-3 mb-4">
+                     <a href="addsecret">
+                       <button onclick="mostrarModal()" class="btn btn-primary btn-lg fw-bold  text-dark">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-square-plus display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Registrar Secretario Academico
+                          </div>
+                        </div>
+                          </button>
+                     </a>
+                    </div>
+
+                     <!-- Boton 5-Agregar Nueva materia-->
+                    <div class="col-md-3 mb-4">
+                     <a href="/adm/addmateria">
+                       <button onclick="mostrarModal()" class="btn btn-primary btn-lg fw-bold  text-dark">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-square-plus display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Registrar Materia
+                          </div>
+                        </div>
+                          </button>
+                     </a>
+                    </div>
+
+                    
+                     <!-- Boton 5-Agregar Nuevo Grado-->
+                    <div class="col-md-3 mb-4">
+                     <a href="/adm/addgrado">
+                       <button onclick="mostrarModal()" class="btn btn-primary btn-lg fw-bold  text-dark">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-square-plus display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Registrar Nuevo Grado
+                          </div>
+                        </div>
+                          </button>
+                     </a>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                     <a href="/asigEstG">
+                       <button onclick="mostrarModal()" class="btn btn-primary btn-lg fw-bold  text-dark">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-square-plus display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            Asignar Estudiante a Grado
+                          </div>
+                        </div>
+                          </button>
+                     </a>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                     <a href="/asigMG">
+                       <button onclick="mostrarModal()" class="btn btn-primary btn-lg fw-bold  text-dark">
+                        <div class="row">
+                          <div class="col-4">
+                            <i class="fa-solid fa-square-plus display-6 align-middle"></i>
+                          </div>
+                          <div class="col-6">
+                            AsignarMaterias A Grados
+                          </div>
+                        </div>
+                          </button>
+                     </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+        </div>
+    </div>
